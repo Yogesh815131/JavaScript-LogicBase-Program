@@ -1,15 +1,15 @@
 /**
-    1
-    2 2
-    3 3 3 
-    4 4 4 4
-    5 5 5 5 5
+    E
+    E D
+    E D C
+    E D C B
+    E D C B A
  */
 
     for(let i=1; i<=5; i++){
         let pattern = "";
         for(let j=1; j<=i; j++){
-            pattern += i + " ";
+            pattern += String.fromCharCode(70-j)+" ";
         }
         console.log(pattern);
     }

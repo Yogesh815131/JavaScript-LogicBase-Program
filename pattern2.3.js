@@ -8,7 +8,7 @@
 
 for(let i=1; i<=5; i++){
     let pattern ="";
-    for(let j=5; j>=5-i; j--){
+    for(let j=5; j>=6-i; j--){
         pattern += j +" ";
     }
     console.log(pattern);
