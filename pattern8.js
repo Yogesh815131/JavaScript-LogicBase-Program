@@ -1,36 +1,44 @@
+/*
+                  * 
+                * * 
+              * * * 
+            * * * * 
+          * * * * * 
+        * * * * * * 
+      * * * * * * * 
+    * * * * * * * * 
+  * * * * * * * * * 
+* * * * * * * * * * 
+  * * * * * * * * * 
+    * * * * * * * * 
+      * * * * * * * 
+        * * * * * * 
+          * * * * * 
+            * * * * 
+              * * * 
+                * * 
+                  * 
+*/
 
+for (let row = 0; row < 19; row++) {
+    if (row < 10) {        
+        for (let spaces = 0; spaces < 9 - row; spaces++) {
+            process.stdout.write("  ");
+        }
 
-for (let row = 1; row <= 10; row++) {
-    if (row <= 5) {
-        let spaces = "";
-        for (let space = 1; space <= 5 - row; space++) {
-            spaces += " ";
+        
+        for (let stars = 0; stars <= row; stars++) {
+            process.stdout.write("* ");
+
         }
-        let pattern = "";
-        for (let col = 1; col <= row; col++) {
-            pattern += "* ";
+    }else {
+        for (let spaces = 0; spaces <= row - 10; spaces++) {
+            process.stdout.write("  ");
         }
-        console.log(spaces + pattern);
-    } else {
-        let spaces = "";
-        for (let space = 1; space <= row - 5; space++) {
-            spaces += " ";
+
+        for (let stars = 0; stars < 19 - row; stars++) {
+            process.stdout.write("* ");
         }
-        let pattern = "";
-        for (let col = 1; col <= 10 - row + 1; col++) {
-            pattern += "* ";
-        }
-        console.log(spaces + pattern);
     }
+    console.log();
 }
-
-
-//         * 
-//       * * 
-//     * * * 
-//   * * * * 
-// * * * * * 
-//   * * * *
-//     * * *
-//       * *
-//         *
