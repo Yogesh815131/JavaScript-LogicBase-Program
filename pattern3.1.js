@@ -1,9 +1,16 @@
+/**
+          * 
+        * * 
+      * * * 
+    * * * * 
+  * * * * * 
+  
+ */
 
-
-for (let row = 0; row < 10; row++) {
+for (let row = 0; row < 5; row++) {
     let spaces = "";
-    for (let space = 0; space < 9 - row; space++) {
-        spaces += " ";
+    for (let space = 0; space < 5 - row; space++) {
+        spaces += "  ";
     }
     let stars = "";
     for (let col = 0; col <= row; col++) {
